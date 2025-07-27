@@ -1,0 +1,249 @@
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(59, 130, 246, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
+  }
+}
+
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* Applied Animations */
+.animate-in {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.animate-in.visible {
+  animation: fadeIn 0.6s ease forwards;
+}
+
+.hero h1 .line:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.hero h1 .line:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.hero h1 .line:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.hero-subtitle {
+  animation-delay: 0.8s;
+}
+
+.hero-actions {
+  animation-delay: 1s;
+}
+
+.hero-visual {
+  animation-delay: 1.2s;
+}
+
+.service-card {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: transform 0.4s ease, opacity 0.4s ease, box-shadow 0.3s ease;
+}
+
+.service-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.work-item {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.work-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggered Animation Delays */
+[data-aos-delay="100"] {
+  transition-delay: 0.1s;
+}
+
+[data-aos-delay="200"] {
+  transition-delay: 0.2s;
+}
+
+[data-aos-delay="300"] {
+  transition-delay: 0.3s;
+}
+
+[data-aos-delay="400"] {
+  transition-delay: 0.4s;
+}
+
+/* Logo Animation */
+.logo-text {
+  background-size: 200% 200%;
+  animation: gradientFlow 4s ease infinite;
+}
+
+/* Code Container Animation */
+.code-container {
+  position: relative;
+}
+
+.code-container::after {
+  content: '';
+  position: absolute;
+  bottom: var(--spacing-6);
+  right: var(--spacing-6);
+  width: 8px;
+  height: 16px;
+  background-color: var(--color-secondary);
+  animation: blink 1s step-end infinite;
+}
+
+/* Floating Elements */
+.stats-container {
+  position: relative;
+}
+
+.stat-item {
+  animation: float 6s ease-in-out infinite;
+}
+
+.stat-item:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.stat-item:nth-child(3) {
+  animation-delay: 2s;
+}
+
+/* Button Hover Effects */
+.btn-primary {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: -100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: all 0.5s;
+}
+
+.btn-primary:hover::after {
+  left: 100%;
+}
+
+/* Counting Animation */
+.stat-number[data-count] {
+  position: relative;
+}
+
+/* Experience Badge */
+.experience-badge {
+  animation: pulse 2s infinite;
+}

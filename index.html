@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeMechanise</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn" aria-label="Toggle dark/light mode">
+      <span class="icon-light">☀️</span>
+      <span class="icon-dark">🌙</span>
+    </button>
+  </div>
+
+  <header id="main-header">
+    <div class="container">
+      <div class="logo">
+        <a href="#home">
+          <span class="logo-text">CodeMechanise</span>
+        </a>
+      </div>
+      <nav id="main-nav">
+        <button class="mobile-menu-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1 data-aos="fade-up">
+            <span class="line">Transform Your</span>
+            <span class="line">Ideas Into</span>
+            <span class="line highlight">Digital Reality</span>
+          </h1>
+          <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+            We build powerful, elegant software solutions that drive business growth.
+          </p>
+          <div class="hero-actions" data-aos="fade-up" data-aos-delay="400">
+            <a href="#services" class="btn btn-primary">Explore Services</a>
+            <a href="#contact" class="btn btn-outline">Get in Touch</a>
+          </div>
+        </div>
+<!-- Update the hero-visual section in your HTML -->
+<div class="hero-visual" data-aos="fade-left" data-aos-delay="600">
+  <div class="terminal-container">
+    <div class="terminal-header">
+      <div class="terminal-buttons">
+        <span class="terminal-btn close"></span>
+        <span class="terminal-btn minimize"></span>
+        <span class="terminal-btn maximize"></span>
+      </div>
+      <div class="terminal-title">bash — codeMecanise</div>
+    </div>
+    <div class="terminal-body" id="interactive-terminal">
+      <div class="terminal-content">
+        <div class="terminal-line"><span class="prompt">$</span> Welcome to CodeMechanise Terminal</div>
+        <div class="terminal-line"><span class="prompt">$</span> Type <span class="command">help</span> to begin</div>
+        <div class="terminal-line"><span class="prompt">$</span> <span class="cursor">█</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
+    </section>
+
+<!-- Replace your current services section with this -->
+<section id="services" class="services">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label" data-aos="fade-up">Services</span>
+      <h2 data-aos="fade-up">Our <span class="highlight">Digital Workshop</span></h2>
+      <p data-aos="fade-up">Custom solutions for every platform and technology stack</p>
+    </div>
+
+    <div class="services-interface" data-aos="fade-up">
+      <div class="platform-selector">
+        <ul class="platform-menu">
+          <li class="active" data-platform="wix">Wix</li>
+          <li data-platform="webflow">Webflow</li>
+          <li data-platform="wordpress">WordPress</li>
+          <li data-platform="shopify">Shopify</li>
+          <li data-platform="framer">Framer</li>
+          <li data-platform="react">React</li>
+          <li data-platform="angular">Angular</li>
+          <li data-platform="django">Django</li>
+          <li data-platform="python">Python</li>
+        </ul>
+      </div>
+      
+      <div class="service-display">
+        <div class="service-description">
+          <h3>Web Design & UX/UI</h3>
+          <p>Custom, responsive, and brand-focused designs that turn visitors into customers. Powered by Figma, Framer, and real user research.</p>
+        </div>
+        
+        <div class="portfolio-grid">
+          <!-- Projects will be loaded here dynamically -->
+        </div>
+      </div>
+    </div>
+    
+    <div class="service-categories">
+      <div class="service-category" data-aos="fade-up">
+        <div class="category-icon">🛠️</div>
+        <h3>Web Design & UX/UI</h3>
+        <p>Custom, responsive, and brand-focused designs that turn visitors into customers.</p>
+      </div>
+      
+      <div class="service-category" data-aos="fade-up" data-aos-delay="100">
+        <div class="category-icon">⚙️</div>
+        <h3>Website Development</h3>
+        <p>Get your dream website built on any platform or coded from scratch.</p>
+      </div>
+      
+      <div class="service-category" data-aos="fade-up" data-aos-delay="200">
+        <div class="category-icon">🧪</div>
+        <h3>SQA & Testing</h3>
+        <p>We ensure bug-free, secure, and optimized performance.</p>
+      </div>
+      
+      <div class="service-category" data-aos="fade-up" data-aos-delay="300">
+        <div class="category-icon">🎓</div>
+        <h3>Training & Consultation</h3>
+        <p>Hands-on training sessions for web development, CMS tools, and SEO.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Replace your existing about section with this -->
+<section id="about" class="about-section">
+<div class="about-code-background">
+  <canvas id="codeCanvas"></canvas>
+</div>
+  
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label" data-aos="fade-up">About Us</span>
+      <h2 data-aos="fade-up">Where Ideas Become <span class="highlight">Digital Reality</span></h2>
+      <p class="section-intro" data-aos="fade-up">We transform visions into high-performing digital experiences through cutting-edge technology and creative solutions.</p>
+    </div>
+
+    <div class="about-tabs" data-aos="fade-up">
+      <button class="tab-btn active" data-tab="company">Company</button>
+      <button class="tab-btn" data-tab="team">Our Team</button>
+      <button class="tab-btn" data-tab="values">Our Values</button>
+    </div>
+
+    <div class="tab-content active" data-tab-content="company">
+      <div class="about-grid">
+        <div class="about-content">
+          <div class="about-text">
+            <h3 data-aos="fade-right">Crafting Digital Excellence Since 2025</h3>
+            <p data-aos="fade-right" data-aos-delay="100">CodeMechanise is a full-service digital agency specializing in bespoke web solutions. We combine technical expertise with creative vision to deliver exceptional results.</p>
+            
+            <div class="capabilities" data-aos="fade-right" data-aos-delay="200">
+              <h4>Our Capabilities:</h4>
+              <div class="capability-grid">
+                <div class="capability-item">
+                  <div class="capability-icon">💻</div>
+                  <span>Custom Web Development</span>
+                </div>
+                <div class="capability-item">
+                  <div class="capability-icon">📱</div>
+                  <span>Mobile Applications</span>
+                </div>
+                <div class="capability-item">
+                  <div class="capability-icon">🎨</div>
+                  <span>UI/UX Design</span>
+                </div>
+                <div class="capability-item">
+                  <div class="capability-icon">🔍</div>
+                  <span>SEO Optimization</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="about-stats" data-aos="fade-left">
+          <div class="stat-card">
+            <div class="stat-number" data-count="100">0</div>
+            <div class="stat-label">Projects Delivered</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-count="5">0</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-count="12">0</div>
+            <div class="stat-label">Team Members</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-count="50">0</div>
+            <div class="stat-label">Happy Clients</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-content" data-tab-content="team">
+      <div class="team-grid">
+        <!-- Developer 1 -->
+        <div class="developer-card" data-aos="fade-up">
+          <div class="developer-image">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Mafiur Rahman">
+            <div class="developer-tech">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Node.js</span>
+            </div>
+          </div>
+          <div class="developer-info">
+            <h3>Mafiur Rahman</h3>
+            <p class="developer-role">Software Engineer</p>
+            <p class="developer-bio">Specializing in React ecosystems with 7+ years experience building performant web applications.</p>
+            <button class="btn-view-profile">View Profile</button>
+          </div>
+        </div>
+        
+        <!-- Developer 2 -->
+        <div class="developer-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="developer-image">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="S.M. Rafi Alam">
+            <div class="developer-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Django</span>
+            </div>
+          </div>
+          <div class="developer-info">
+            <h3>S.M. Rafi Alam</h3>
+            <p class="developer-role">Software Engineer</p>
+            <p class="developer-bio">Builds scalable server architectures with 8+ years in Python and database optimization.</p>
+            <button class="btn-view-profile">View Profile</button>
+          </div>
+        </div>
+        
+        <!-- Developer 3 -->
+        <div class="developer-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="developer-image">
+            <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Mahmudul Hasan">
+            <div class="developer-tech">
+              <span class="tech-tag">UI/UX</span>
+              <span class="tech-tag">Figma</span>
+            </div>
+          </div>
+          <div class="developer-info">
+            <h3>Mahmudul Hasan</h3>
+            <p class="developer-role">UI/UX Designer</p>
+            <p class="developer-bio">Creates intuitive user experiences with a focus on accessibility and conversion.</p>
+            <button class="btn-view-profile">View Profile</button>
+          </div>
+        </div>
+        
+        <!-- Developer 4 -->
+        <div class="developer-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="developer-image">
+            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Habizur Rahman Ridoy">
+            <div class="developer-tech">
+              <span class="tech-tag">Angular</span>
+              <span class="tech-tag">TypeScript</span>
+            </div>
+          </div>
+          <div class="developer-info">
+            <h3>Habizur Rahman Ridoy</h3>
+            <p class="developer-role">Full Stack Developer</p>
+            <p class="developer-bio">Expert in enterprise applications with Angular and TypeScript.</p>
+            <button class="btn-view-profile">View Profile</button>
+          </div>
+        </div>
+
+        <!-- Developer 5 -->
+        <div class="developer-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="developer-image">
+            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Ananta Jalil">
+            <div class="developer-tech">
+              <span class="tech-tag">Angular</span>
+              <span class="tech-tag">TypeScript</span>
+            </div>
+          </div>
+          <div class="developer-info">
+            <h3>Ananta Jalil</h3>
+            <p class="developer-role">Full Stack Developer</p>
+            <p class="developer-bio">Expert in enterprise applications with Angular and TypeScript.</p>
+            <button class="btn-view-profile">View Profile</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-content" data-tab-content="values">
+      <div class="values-grid">
+        <div class="value-card" data-aos="fade-up">
+          <div class="value-icon">🚀</div>
+          <h3>Innovation</h3>
+          <p>We constantly explore new technologies and approaches to deliver cutting-edge solutions.</p>
+        </div>
+        
+        <div class="value-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="value-icon">🤝</div>
+          <h3>Collaboration</h3>
+          <p>We work closely with clients to understand their unique needs and business goals.</p>
+        </div>
+        
+        <div class="value-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="value-icon">🎯</div>
+          <h3>Excellence</h3>
+          <p>We're committed to delivering the highest quality work in every project we undertake.</p>
+        </div>
+        
+        <div class="value-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="value-icon">💡</div>
+          <h3>Transparency</h3>
+          <p>Clear communication and honesty are at the core of all our client relationships.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section id="work" class="work">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label" data-aos="fade-up">Our Work</span>
+          <h2 data-aos="fade-up">Recent <span class="highlight">Projects</span></h2>
+          <p data-aos="fade-up">Delivering excellence across industries and technologies.</p>
+        </div>
+
+        <div class="work-filter" data-aos="fade-up">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web</button>
+          <button class="filter-btn" data-filter="mobile">Mobile</button>
+          <button class="filter-btn" data-filter="enterprise">Enterprise</button>
+        </div>
+
+        <div class="work-grid">
+          <div class="work-item" data-category="web" data-aos="fade-up">
+            <div class="work-image">
+              <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg" alt="E-Commerce Platform">
+              <div class="work-overlay">
+                <div class="work-details">
+                  <h3>E-Commerce Platform</h3>
+                  <p>A custom shopping experience with seamless payment integration</p>
+                  <a href="#" class="btn btn-sm btn-primary">View Case Study</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="work-item" data-category="mobile" data-aos="fade-up" data-aos-delay="100">
+            <div class="work-image">
+              <img src="https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg" alt="Health Tracking App">
+              <div class="work-overlay">
+                <div class="work-details">
+                  <h3>Health Tracking App</h3>
+                  <p>Mobile application for monitoring health metrics and activities</p>
+                  <a href="#" class="btn btn-sm btn-primary">View Case Study</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="work-item" data-category="enterprise" data-aos="fade-up" data-aos-delay="200">
+            <div class="work-image">
+              <img src="https://images.pexels.com/photos/7567460/pexels-photo-7567460.jpeg" alt="Financial Management System">
+              <div class="work-overlay">
+                <div class="work-details">
+                  <h3>Financial Management System</h3>
+                  <p>Enterprise solution for financial data analysis and reporting</p>
+                  <a href="#" class="btn btn-sm btn-primary">View Case Study</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="work-item" data-category="web" data-aos="fade-up" data-aos-delay="300">
+            <div class="work-image">
+              <img src="https://images.pexels.com/photos/5905709/pexels-photo-5905709.jpeg" alt="Educational Platform">
+              <div class="work-overlay">
+                <div class="work-details">
+                  <h3>Educational Platform</h3>
+                  <p>Interactive learning environment with progress tracking</p>
+                  <a href="#" class="btn btn-sm btn-primary">View Case Study</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <span class="section-label" data-aos="fade-up">Contact Us</span>
+            <h2 data-aos="fade-up">Let's Start a <span class="highlight">Conversation</span></h2>
+            <p data-aos="fade-up">Ready to transform your ideas into reality? Get in touch with our team.</p>
+            
+            <div class="contact-details">
+              <div class="contact-item" data-aos="fade-up">
+                <div class="contact-icon">✉️</div>
+                <div class="contact-text">
+                  <h4>Email</h4>
+                  <p>hello@codemechanise.com</p>
+                </div>
+              </div>
+              <div class="contact-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="contact-icon">📞</div>
+                <div class="contact-text">
+                  <h4>Phone</h4>
+                  <p>+1 (555) 123-4567</p>
+                </div>
+              </div>
+              <div class="contact-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="contact-icon">📍</div>
+                <div class="contact-text">
+                  <h4>Address</h4>
+                  <p>123 Innovation Street, Tech City, TC 10101</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="contact-form-container" data-aos="fade-left">
+            <form id="contact-form" class="contact-form">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-info">
+          <div class="footer-logo">
+            <span class="logo-text">CodeMechanise</span>
+          </div>
+          <p>Crafting exceptional digital experiences through innovative software solutions.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Twitter">𝕏</a>
+            <a href="#" aria-label="LinkedIn">in</a>
+            <a href="#" aria-label="GitHub">GH</a>
+            <a href="#" aria-label="Instagram">IG</a>
+          </div>
+        </div>
+        
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">Custom Software</a></li>
+            <li><a href="#">Mobile Development</a></li>
+            <li><a href="#">Digital Transformation</a></li>
+            <li><a href="#">Cybersecurity</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#work">Our Work</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">Support Center</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 CodeMechanise. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true,
+      offset: 50
+    });
+  </script>
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/theme.js"></script>
+</body>
+</html>
